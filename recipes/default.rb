@@ -66,8 +66,8 @@ if node['tomcat']['run_base_instance']
     ssl_port node['tomcat']['ssl_port']
     ssl_proxy_port node['tomcat']['ssl_proxy_port']
     ajp_port node['tomcat']['ajp_port']
-    ajp_packetsize attrs['ajp_packetsize']
-    uriencoding attrs['uriencoding']
+    ajp_packetsize node['tomcat']['ajp_packetsize']
+    uriencoding node['tomcat']['uriencoding']
     shutdown_port node['tomcat']['shutdown_port']
   end
 end
